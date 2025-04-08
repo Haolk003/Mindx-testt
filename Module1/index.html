@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Number Slider Puzzle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-8">
+    <div class="max-w-5xl mx-auto bg-white shadow-lg rounded-lg p-6 space-y-6">
+      <!-- Nút Bắt đầu -->
+      <div class="text-center">
+        <button
+          class="btn-start bg-green-600 text-white font-semibold px-6 py-2 rounded hover:bg-green-700"
+        >
+          Bắt đầu
+        </button>
+      </div>
+
+      <div class="flex justify-center space-x-6">
+        <!-- Game Board -->
+        <div
+          class="grid grid-cols-4 gap-4 p-4 bg-white shadow rounded board"
+        ></div>
+
+        <!-- Đồng hồ và Hướng dẫn -->
+        <div class="space-y-6">
+          <div class="bg-green-100 p-4 text-center rounded shadow">
+            <p class="font-semibold">Đồng Hồ</p>
+            <p class="text-2xl font-bold clock"><span>00:00</span></p>
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded shadow text-center">
+            <p class="font-semibold mb-2">Hướng Dẫn Di Chuyển</p>
+            <div class="grid grid-cols-3 gap-1 text-sm">
+              <span></span> <span class="border rounded px-2 py-1">W</span>
+              <span></span> <span class="border rounded px-2 py-1">A</span>
+              <span class="border rounded px-2 py-1">S</span>
+              <span class="border rounded px-2 py-1">D</span>
+            </div>
+            <div class="grid grid-cols-3 gap-1 text-sm">
+              <span></span> <span class="border rounded px-2 py-1">W</span>
+              <span></span> <span class="border rounded px-2 py-1">A</span>
+              <span class="border rounded px-2 py-1">S</span>
+              <span class="border rounded px-2 py-1">D</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lịch sử lượt chơi -->
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-center font-semibold mb-4">Lịch Sử Lượt Chơi</h2>
+        <table class="table-auto w-full text-center border border-gray-300">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="border px-4 py-2">#</th>
+              <th class="border px-4 py-2">Bước đi</th>
+              <th class="border px-4 py-2">Thời gian</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
